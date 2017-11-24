@@ -1,0 +1,11 @@
+.vagrant
+.kitchen
+Berksfile.lock
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+
+.chef
