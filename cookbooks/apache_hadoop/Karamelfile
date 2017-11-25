@@ -1,0 +1,13 @@
+dependencies: 
+  - recipe: apache_hadoop::nn
+  - recipe: apache_hadoop::rm
+    global:  
+      - apache_hadoop::nn
+  - recipe: apache_hadoop::dn
+  - recipe: apache_hadoop::nm
+    global:  
+      - apache_hadoop::rm
+  - recipe: apache_hadoop::jhs
+    global:  
+      - apache_hadoop::nn
+      - apache_hadoop::dn

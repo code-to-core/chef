@@ -1,0 +1,9 @@
+#!/bin/bash
+
+command=yarn
+
+sudo -u <%= node.apache_hadoop.hdfs.user %> bash -l <<EOF
+<%= node.apache_hadoop.base_dir %>/bin/$command $@
+EOF
+
+exit $?
