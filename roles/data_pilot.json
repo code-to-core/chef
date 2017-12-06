@@ -1,0 +1,21 @@
+{
+   "name": "data_pilot",
+   "description": "Pilot role for changes ot the data role",
+   "json_class": "Chef::Role",
+   "default_attributes": {
+     "chef_client": {
+       "interval": 3600,
+       "splay": 300
+     }
+   },
+   "override_attributes": {
+   },
+   "chef_type": "role",
+   "run_list": ["recipe[chef-client::default]",
+                "recipe[chef-client::delete_validation]",
+                "recipe[setup_base_packages::default]",
+                "recipe[hadoop_install::default]"
+   ],
+   "env_run_lists": {
+   }
+}

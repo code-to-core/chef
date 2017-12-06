@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+source 'https://supermarket.chef.io'
+
+cookbook 'ulimit', git: "https://github.com/bmhatfield/chef-ulimit.git"
+
+
+metadata
+  cookbook "apt", ">= 0.0.0"
+  cookbook "java", "~> 1.40"
+  cookbook "magic_shell", ">= 0.0.0"
+  cookbook "homebrew", ">= 0.0.0"
+  cookbook "windows", ">= 0.0.0"
+  cookbook "ohai", ">= 4.0.0"
