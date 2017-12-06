@@ -13,7 +13,8 @@
    "chef_type": "role",
    "run_list": ["recipe[chef-client::default]",
                 "recipe[chef-client::delete_validation]",
-                "recipe[setup_base_packages::default]"
+                "recipe[setup_base_packages::default]",
+                "recipe[hadoop_install::default]"
    ],
    "env_run_lists": {
    }
