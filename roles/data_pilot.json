@@ -15,7 +15,7 @@
                 "recipe[chef-client::delete_validation]",
                 "recipe[setup_base_packages::default]",
                 "recipe[hadoop_install::default]",
-                "recipe[docker::default]"
+                "recipe[basic_docker::default]"
    ],
    "env_run_lists": {
    }

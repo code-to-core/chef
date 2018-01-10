@@ -1,10 +1,12 @@
-name 'docker'
+name 'basic_docker'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures docker'
 long_description 'Installs/Configures docker'
-version '0.1.0'
+version '0.1.1'
+
+depends 'docker', '~>2.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
